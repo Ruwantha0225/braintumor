@@ -22,16 +22,6 @@ def get_className(classNo):
 	elif classNo==1:
 		return "Yes Brain Tumor"
 
-""""
-def getResult(img):
-    image=cv2.imread(img)
-    image = Image.fromarray(image, 'RGB')
-    image = image.resize((64, 64))
-    image=np.array(image)
-    input_img = np.expand_dims(image, axis=0)
-    result=model.predict_classes(input_img)
-    return result
-"""
 
 def getResult(img):
     image=cv2.imread(img)
