@@ -102,8 +102,8 @@ validation_data=(x_test, y_test),
 shuffle=False)
 
 
-model.save('BrainTumor10EpochsCategorical.h5')
-
+##model.save('BrainTumor10EpochsCategorical.h5')
+model.save('Tumor10EpochsCategorical.h5')
 
 
 
