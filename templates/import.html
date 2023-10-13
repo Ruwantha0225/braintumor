@@ -15,12 +15,42 @@
 <body>
     <nav class="navbar navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">Brain Tumor Classification Using Deep Learning</a>
+            <a class="navbar-brand" href="{{url_for('index')}}"><h1> Brain Tumor Classification Using Deep Learning</h1></a>
         </div>
+
+        
+            <section class="">
+          
+            <div class="text-center text-white" style="background-color: #0a4275;">
+              <!-- Grid container -->
+              <div class="container p-4 pb-0">
+                <!-- Section: CTA -->
+                <section class="">
+                  <p class="d-flex justify-content-center align-items-center">
+                    <span class="me-3">Register for free &nbsp &nbsp</span>
+                    <button type="button" class="btn btn-outline-light btn-rounded">
+                      Sign up!
+                    </button>
+                  </p>
+                </section>
+                <!-- Section: CTA -->
+              </div>
+              <!-- Grid container -->
+            </div>
+          </section>
+
+
+
     </nav>
+
+
 
     {% block content %}
     {% endblock %}
+
+
+    
+
 
 </body>
 

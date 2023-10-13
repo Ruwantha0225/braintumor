@@ -5,7 +5,7 @@ from tensorflow.keras.preprocessing import image
 from PIL import Image
 import cv2
 from keras.models import load_model
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, url_for, redirect
 from werkzeug.utils import secure_filename
 
 
@@ -52,6 +52,14 @@ def upload():
         result=get_className(value) 
         return result
     return None
+
+@app.route('/load', methods=['GET'])
+def load():
+    return render_template('view.html')
+
+@app.route('/insert', methods=['GET'])
+def insert():
+    return render_template('insert.html')
 
 
 if __name__ == '__main__':

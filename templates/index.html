@@ -2,11 +2,12 @@
 {% block content %}
 
 <center>
-<br><h2>Brain Tumor Classification Using Deep Learning</h2><br>
+<br><br><h2>Upload the MRI scan image here</h2><br>
 
     <form id="upload-file" method="post" enctype="multipart/form-data">
          <input type="file" name="file" class="btn btn-success" id="imageUpload" accept=".png, .jpg, .jpeg">
     </form>
+
 
 
     <div class="image-section" style="display:none;">
@@ -14,6 +15,7 @@
          <div>
             <button type="button" class="btn btn-info btn-lg " id="btn-predict">Predict!</button>
          </div>
+ 
     </div>
 
 
@@ -22,15 +24,34 @@
     <h3 id="result">
         <span> </span>
     </h3>
+    <br>
+    <br>
+    <h2>Insert records</h2><br>
 
-    <h1>
-        
-    </h1>
+    <div class="button" >
+        <a href="{{url_for('insert')}}" >
+        <button type="button" class="btn btn-info btn-lg ">
+            MANUAL DATA INSERT 
+        </button>       
+        </a>
+    </div>
 
-    <div>
-        <button type="button" class="btn btn-info btn-lg " id="btn-load">LOAD DATA!</button>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2>Click to view old records</h2><br>
+
+    <div class="button" >
+        <a href="{{url_for('load')}}" >
+        <button type="button" class="btn btn-info btn-lg ">
+            LOAD PREVIOUS RECORDS
+        </button>       
+        </a>
     </div>
 
 
 </center><br><br>
+
 {% endblock %}

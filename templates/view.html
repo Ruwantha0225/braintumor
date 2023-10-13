@@ -1,0 +1,49 @@
+{% extends "import.html" %} 
+{% block content %}
+
+<center>
+<br><h2>Old data records will appear in this section</h2><br>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Patient ID</th>
+        <th scope="col">Patient Name</th>
+        <th scope="col">Result</th>
+        <th scope="col">MRI scan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Positive</td>
+        <td>Pred5.jpg</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Positive</td>
+        <td>Pred9.jpg</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>John</td>
+        <td>Negative</td>
+        <td>Pred2.jpg</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <div class="button" >
+    <a href="{{url_for('index')}}" >
+    <button type="button" class="btn btn-info btn-lg ">
+        Back to Home Page
+    </button>       
+    </a>
+</div>
+
+
+</center><br><br>
+{% endblock %}
