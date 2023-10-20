@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brain Tumor Classification Using Deep Learning</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <link href="{{ url_for('static', filename='css/test.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/newjs.js') }}" type="text/javascript"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="{{url_for('index')}}"><h1> Brain Tumor Classification Using Deep Learning</h1></a>
+        </div>
+
+        
+            <section class="">
+          
+            <div class="text-center text-white" style="background-color: #0a4275;">
+              <!-- Grid container -->
+              <div class="container p-4 pb-0">
+                <!-- Section: CTA -->
+                <section class="">
+                  <p class="d-flex justify-content-center align-items-center">
+                    <span class="me-3">Register for free &nbsp &nbsp</span>
+                    <button type="button" class="btn btn-outline-light btn-rounded">
+                      Sign up!
+                    </button>
+                  </p>
+                </section>
+                <!-- Section: CTA -->
+              </div>
+              <!-- Grid container -->
+            </div>
+          </section>
+
+
+
+    </nav>
+
+
+
+    {% block content %}
+    {% endblock %}
+
+
+    
+
+
+</body>
+
+
+</html>
+
+
+
+
